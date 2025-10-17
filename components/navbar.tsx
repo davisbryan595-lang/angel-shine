@@ -66,7 +66,7 @@ export default function Navbar() {
                 {link.label}
               </Link>
             ))}
-            <Button className="w-full bg-primary hover:bg-primary/90 text-primary-foreground">Book Now</Button>
+            <Button className="w-full btn-metallic">Book Now</Button>
           </div>
         )}
       </div>
