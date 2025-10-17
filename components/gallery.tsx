@@ -52,6 +52,33 @@ export default function Gallery() {
     }))
   }
 
+  const imagePairs: Record<number, { before: string; after: string }> = {
+    1: {
+      before: "https://images.pexels.com/photos/10900760/pexels-photo-10900760.jpeg",
+      after: "https://images.pexels.com/photos/20296993/pexels-photo-20296993.jpeg",
+    },
+    2: {
+      before: "https://images.pexels.com/photos/6873123/pexels-photo-6873123.jpeg",
+      after: "https://images.pexels.com/photos/12764927/pexels-photo-12764927.jpeg",
+    },
+    3: {
+      before: "https://images.pexels.com/photos/9381641/pexels-photo-9381641.jpeg",
+      after: "https://images.pexels.com/photos/11139393/pexels-photo-11139393.jpeg",
+    },
+    4: {
+      before: "https://images.pexels.com/photos/9381641/pexels-photo-9381641.jpeg",
+      after: "https://images.pexels.com/photos/11139393/pexels-photo-11139393.jpeg",
+    },
+    5: {
+      before: "https://images.pexels.com/photos/7019607/pexels-photo-7019607.jpeg",
+      after: "https://images.pexels.com/photos/13805638/pexels-photo-13805638.jpeg",
+    },
+    6: {
+      before: "https://images.pexels.com/photos/10900760/pexels-photo-10900760.jpeg",
+      after: "https://images.pexels.com/photos/20296993/pexels-photo-20296993.jpeg",
+    },
+  }
+
   return (
     <section id="gallery" className="py-20 bg-secondary/30">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -80,10 +107,12 @@ export default function Gallery() {
                 {/* Before Image */}
                 <div className="absolute inset-0 w-full h-full">
                   <Image
-                    src={`/placeholder.svg?height=400&width=400&query=car before detailing dirty`}
+                    src={imagePairs[item.id].before}
                     alt={`${item.title} - Before`}
                     fill
                     className="object-cover"
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                    priority
                   />
                 </div>
 
@@ -93,10 +122,12 @@ export default function Gallery() {
                   style={{ width: `${sliderPositions[item.id]}%` }}
                 >
                   <Image
-                    src={`/placeholder.svg?height=400&width=400&query=car after detailing shiny clean`}
+                    src={imagePairs[item.id].after}
                     alt={`${item.title} - After`}
                     fill
                     className="object-cover"
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                    priority
                   />
                 </div>
 

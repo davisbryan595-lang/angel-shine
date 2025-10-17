@@ -2,6 +2,7 @@
 
 import { useState } from "react"
 import Link from "next/link"
+import Image from "next/image"
 import { Menu, X } from "lucide-react"
 import { Button } from "@/components/ui/button"
 
@@ -19,11 +20,17 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
-          <Link href="/" className="flex items-center gap-2">
-            <div className="w-10 h-10 bg-primary rounded-lg flex items-center justify-center">
-              <span className="text-primary-foreground font-bold text-lg">AS</span>
+          <Link href="/" className="flex items-center gap-2" aria-label="Angel's Shine Detailing">
+            <div className="w-10 h-10 bg-primary rounded-lg overflow-hidden">
+              <Image
+                src="https://cdn.builder.io/api/v1/image/assets%2F5c758e804cba4fa3a488e9088887877b%2F3112de0cfabb4364b4df0113ae51281e?format=webp&width=800"
+                alt="Angel's Shine Detailing logo"
+                width={40}
+                height={40}
+                className="object-cover w-full h-full"
+                priority
+              />
             </div>
-            <span className="hidden sm:inline font-bold text-lg text-foreground">Angel's Shine</span>
           </Link>
 
           {/* Desktop Navigation */}
