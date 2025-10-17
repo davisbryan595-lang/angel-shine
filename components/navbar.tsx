@@ -44,7 +44,7 @@ export default function Navbar() {
                 {link.label}
               </Link>
             ))}
-            <Button className="bg-primary hover:bg-primary/90 text-primary-foreground">Book Now</Button>
+            <Button className="btn-metallic">Book Now</Button>
           </div>
 
           {/* Mobile Menu Button */}
