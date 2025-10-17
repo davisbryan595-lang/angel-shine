@@ -173,4 +173,41 @@
   .animate-glow {
     animation: glow 2s ease-in-out infinite;
   }
+
+  /* Metallic silver utilities */
+  .metallic-bg {
+    background: linear-gradient(180deg, var(--metallic-silver-highlight), var(--metallic-silver));
+    color: var(--color-foreground);
+  }
+
+  .metallic-text {
+    color: color-mix(in srgb, var(--metallic-silver) 80%, var(--color-foreground) 20%);
+  }
+
+  .metallic-border {
+    border-color: var(--metallic-silver);
+    box-shadow: 0 1px 0 var(--metallic-silver-shadow) inset;
+  }
+
+  .btn-metallic {
+    background: linear-gradient(90deg, var(--metallic-silver-highlight), var(--metallic-silver));
+    color: var(--metallic-silver-shadow);
+    border-radius: var(--radius);
+    padding: 0.5rem 1rem;
+  }
+
+  .btn-metallic:hover {
+    filter: brightness(0.95);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+  }
+
+  .badge-metallic {
+    background: linear-gradient(90deg, rgba(255,255,255,0.06), rgba(255,255,255,0.02));
+    border: 1px solid var(--metallic-silver);
+    color: var(--metallic-silver-highlight);
+    padding: 0.25rem 0.75rem;
+    border-radius: 9999px;
+    font-weight: 600;
+    font-size: 0.875rem;
+  }
 }
