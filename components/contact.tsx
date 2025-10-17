@@ -66,7 +66,7 @@ export default function Contact() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
         <div className="text-center mb-16">
-          <div className="inline-block mb-4 px-4 py-2 bg-primary/10 border border-primary/30 rounded-full">
+          <div className="inline-block mb-4 px-4 py-2 badge-metallic">
             <span className="text-primary font-semibold text-sm">Get In Touch</span>
           </div>
           <h2 className="text-4xl sm:text-5xl font-bold text-foreground mb-4">Contact Us Today</h2>
@@ -85,9 +85,9 @@ export default function Contact() {
                   <a
                     key={index}
                     href={info.href}
-                    className="group p-6 bg-card border border-border rounded-lg hover:border-primary/50 transition-all"
+                    className="group p-6 bg-card border border-border rounded-lg hover:border-primary/50 transition-all metallic-glow"
                   >
-                    <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-4 group-hover:bg-primary/20 transition-colors">
+                    <div className="w-12 h-12 badge-metallic rounded-lg flex items-center justify-center mb-4 group-hover:bg-primary/20 transition-colors">
                       <Icon className="w-6 h-6 text-primary" />
                     </div>
                     <h3 className="font-semibold text-foreground mb-1">{info.label}</h3>
@@ -103,11 +103,11 @@ export default function Contact() {
               <div className="flex gap-4">
                 {["Facebook", "Instagram", "Twitter"].map((social) => (
                   <button
-                    key={social}
-                    className="w-10 h-10 bg-primary/10 hover:bg-primary hover:text-primary-foreground rounded-lg transition-colors flex items-center justify-center text-sm font-semibold"
-                  >
-                    {social.charAt(0)}
-                  </button>
+                  key={social}
+                  className="w-10 h-10 btn-metallic metallic-glow text-black rounded-lg transition-colors flex items-center justify-center text-sm font-semibold"
+                >
+                  {social.charAt(0)}
+                </button>
                 ))}
               </div>
             </div>
@@ -200,7 +200,7 @@ export default function Contact() {
 
               <Button
                 type="submit"
-                className="w-full bg-primary hover:bg-primary/90 text-primary-foreground font-semibold py-2"
+                className="w-full btn-metallic metallic-glow text-black font-semibold py-2"
               >
                 {submitted ? "Message Sent!" : "Send Message"}
               </Button>

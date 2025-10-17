@@ -173,4 +173,96 @@
   .animate-glow {
     animation: glow 2s ease-in-out infinite;
   }
+
+  /* Metallic silver utilities */
+  .metallic-bg {
+    background: linear-gradient(180deg, var(--metallic-silver-highlight), var(--metallic-silver));
+    color: var(--color-foreground);
+  }
+
+  .metallic-text {
+    color: color-mix(in srgb, var(--metallic-silver) 80%, var(--color-foreground) 20%);
+  }
+
+  .metallic-border {
+    border-color: var(--metallic-silver);
+    box-shadow: 0 1px 0 var(--metallic-silver-shadow) inset;
+  }
+
+  .btn-metallic {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(180deg, var(--metallic-silver-highlight), var(--metallic-silver));
+    color: #000;
+    border: 1px solid color-mix(in srgb, var(--metallic-silver) 50%, transparent);
+    border-radius: var(--radius);
+    padding: 0.5rem 1rem;
+    overflow: hidden;
+    transition: transform 0.15s ease, box-shadow 0.15s ease, background 0.15s ease;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.06), 0 0 10px color-mix(in srgb, var(--metallic-silver-highlight) 40%, transparent);
+  }
+
+  .btn-metallic::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(180deg, rgba(255,255,255,0.85) 0%, rgba(255,255,255,0.35) 25%, rgba(255,255,255,0.06) 50%, rgba(0,0,0,0) 100%);
+    mix-blend-mode: overlay;
+    pointer-events: none;
+    transform: translateY(-20%);
+    transition: transform 0.45s cubic-bezier(.2,.9,.2,1), opacity 0.25s ease;
+    opacity: 0.6;
+  }
+
+  .btn-metallic:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 6px 22px rgba(0, 0, 0, 0.12), 0 0 16px color-mix(in srgb, var(--metallic-silver-highlight) 50%, transparent);
+    background: linear-gradient(180deg, var(--metallic-silver-highlight), color-mix(in srgb, var(--metallic-silver-highlight) 60%, var(--metallic-silver) 40%));
+  }
+
+  .btn-metallic:active::after {
+    transform: translateY(0);
+    opacity: 0.55;
+  }
+
+  /* Metallic glow utility for elements */
+  .metallic-glow {
+    box-shadow: 0 4px 14px color-mix(in srgb, var(--metallic-silver-highlight) 50%, transparent), 0 1px 6px color-mix(in srgb, var(--metallic-silver) 30%, transparent);
+    transition: box-shadow 0.2s ease, transform 0.15s ease;
+  }
+
+  .metallic-glow:hover {
+    box-shadow: 0 8px 26px color-mix(in srgb, var(--metallic-silver-highlight) 60%, transparent), 0 3px 8px color-mix(in srgb, var(--metallic-silver) 35%, transparent);
+    transform: translateY(-1px);
+  }
+
+  /* Logo-specific metallic glow */
+  .logo-metallic-glow {
+    position: relative;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 12px color-mix(in srgb, var(--metallic-silver-highlight) 50%, transparent), 0 1px 4px color-mix(in srgb, var(--metallic-silver) 30%, transparent);
+  }
+
+  .logo-metallic-glow::after {
+    content: "";
+    position: absolute;
+    inset: -4px;
+    border-radius: inherit;
+    background: radial-gradient(closest-side, color-mix(in srgb, var(--metallic-silver-highlight) 30%, transparent), transparent 60%);
+    filter: blur(6px);
+    opacity: 0.6;
+    pointer-events: none;
+  }
+
+  .badge-metallic {
+    background: linear-gradient(90deg, rgba(255,255,255,0.06), rgba(255,255,255,0.02));
+    border: 1px solid var(--metallic-silver);
+    color: var(--metallic-silver-highlight);
+    padding: 0.25rem 0.75rem;
+    border-radius: 9999px;
+    font-weight: 600;
+    font-size: 0.875rem;
+  }
 }

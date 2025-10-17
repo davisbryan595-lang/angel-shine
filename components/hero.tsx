@@ -15,7 +15,7 @@ export default function Hero() {
       {/* Content */}
       <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <div className="animate-fade-in-up">
-          <div className="inline-block mb-6 px-4 py-2 bg-primary/10 border border-primary/30 rounded-full">
+          <div className="inline-block mb-6 px-4 py-2 badge-metallic">
             <span className="text-primary font-semibold text-sm">Premium Auto Detailing</span>
           </div>
 
@@ -30,11 +30,11 @@ export default function Hero() {
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-            <Button size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground px-8">
+            <Button size="lg" className="btn-metallic px-8">
               Book Your Appointment
               <ArrowRight className="ml-2 w-5 h-5" />
             </Button>
-            <Button size="lg" variant="outline" className="border-border hover:bg-card px-8 bg-transparent">
+            <Button size="lg" variant="outline" className="border-border metallic-border px-8 bg-transparent">
               View Our Work
             </Button>
           </div>

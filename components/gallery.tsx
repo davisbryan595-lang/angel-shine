@@ -84,7 +84,7 @@ export default function Gallery() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
         <div className="text-center mb-16">
-          <div className="inline-block mb-4 px-4 py-2 bg-primary/10 border border-primary/30 rounded-full">
+          <div className="inline-block mb-4 px-4 py-2 badge-metallic">
             <span className="text-primary font-semibold text-sm">Our Work</span>
           </div>
           <h2 className="text-4xl sm:text-5xl font-bold text-foreground mb-4">Before & After Gallery</h2>
@@ -165,19 +165,19 @@ export default function Gallery() {
         {/* Gallery Stats */}
         <div className="mt-16 grid grid-cols-2 md:grid-cols-4 gap-6 bg-card border border-border rounded-xl p-8">
           <div className="text-center">
-            <div className="text-3xl font-bold text-primary mb-2">1000+</div>
+            <div className="text-3xl font-bold text-primary mb-2 metallic-text">1000+</div>
             <p className="text-sm text-muted-foreground">Vehicles Detailed</p>
           </div>
           <div className="text-center">
-            <div className="text-3xl font-bold text-primary mb-2">98%</div>
+            <div className="text-3xl font-bold text-primary mb-2 metallic-text">98%</div>
             <p className="text-sm text-muted-foreground">Customer Satisfaction</p>
           </div>
           <div className="text-center">
-            <div className="text-3xl font-bold text-primary mb-2">15+</div>
+            <div className="text-3xl font-bold text-primary mb-2 metallic-text">15+</div>
             <p className="text-sm text-muted-foreground">Awards Won</p>
           </div>
           <div className="text-center">
-            <div className="text-3xl font-bold text-primary mb-2">24/7</div>
+            <div className="text-3xl font-bold text-primary mb-2 metallic-text">24/7</div>
             <p className="text-sm text-muted-foreground">Customer Support</p>
           </div>
         </div>

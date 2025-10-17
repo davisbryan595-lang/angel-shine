@@ -37,7 +37,7 @@ export default function Services() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
         <div className="text-center mb-16">
-          <div className="inline-block mb-4 px-4 py-2 bg-primary/10 border border-primary/30 rounded-full">
+          <div className="inline-block mb-4 px-4 py-2 badge-metallic">
             <span className="text-primary font-semibold text-sm">Our Services</span>
           </div>
           <h2 className="text-4xl sm:text-5xl font-bold text-foreground mb-4">Premium Detailing Solutions</h2>
@@ -54,14 +54,14 @@ export default function Services() {
             return (
               <Card
                 key={index}
-                className="group relative bg-card border-border hover:border-primary/50 transition-all duration-300 overflow-hidden"
+                className="group relative bg-card border-border hover:border-primary/50 transition-all duration-300 overflow-hidden metallic-glow"
               >
                 {/* Hover background effect */}
                 <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
 
                 <div className="relative p-6 flex flex-col h-full">
                   {/* Icon */}
-                  <div className="mb-4 w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center group-hover:bg-primary/20 transition-colors">
+                  <div className="mb-4 w-12 h-12 badge-metallic flex items-center justify-center transition-colors">
                     <Icon className="w-6 h-6 text-primary" />
                   </div>
 
@@ -93,7 +93,7 @@ export default function Services() {
             Contact us today for a free consultation and discover how our premium detailing services can restore your
             car's shine.
           </p>
-          <button className="inline-block px-8 py-3 bg-primary hover:bg-primary/90 text-primary-foreground font-semibold rounded-lg transition-colors">
+          <button className="inline-block px-8 py-3 btn-metallic metallic-glow text-black font-semibold rounded-lg transition-colors">
             Get Your Free Quote
           </button>
         </div>
