@@ -1,4 +1,5 @@
 import Link from "next/link"
+import Image from "next/image"
 import { Mail, Phone, MapPin } from "lucide-react"
 
 export default function Footer() {
@@ -32,11 +33,17 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8 mb-12">
           {/* Brand Section */}
           <div className="lg:col-span-1">
-            <Link href="/" className="flex items-center gap-2 mb-4">
-              <div className="w-10 h-10 bg-primary rounded-lg flex items-center justify-center">
-                <span className="text-primary-foreground font-bold text-lg">AS</span>
+            <Link href="/" className="flex items-center gap-2 mb-4" aria-label="Angel's Shine Detailing">
+              <div className="w-10 h-10 rounded-lg overflow-hidden">
+                <Image
+                  src="https://cdn.builder.io/api/v1/image/assets%2F5c758e804cba4fa3a488e9088887877b%2F3112de0cfabb4364b4df0113ae51281e?format=webp&width=800"
+                  alt="Angel's Shine Detailing logo"
+                  width={40}
+                  height={40}
+                  className="object-cover w-full h-full"
+                  priority
+                />
               </div>
-              <span className="font-bold text-lg text-foreground">Angel's Shine</span>
             </Link>
             <p className="text-muted-foreground text-sm mb-4">
               Premium auto detailing services in Tucson, AZ. Shine that lasts.
