@@ -96,14 +96,19 @@ export default function Footer() {
           <p className="text-muted-foreground text-sm">
             &copy; {currentYear} Angel's Shine Detailing. All rights reserved.
           </p>
-          <div className="flex gap-6">
-            {["Facebook", "Instagram", "Twitter"].map((social) => (
+          <div className="flex gap-4">
+            {[
+              { label: 'Facebook', href: '#', Icon: Facebook },
+              { label: 'Instagram', href: '#', Icon: Instagram },
+              { label: 'Twitter', href: '#', Icon: Twitter },
+            ].map((social) => (
               <a
-                key={social}
-                href="#"
-                className="text-muted-foreground hover:text-foreground transition-colors text-sm"
+                key={social.label}
+                href={social.href}
+                aria-label={social.label}
+                className="text-muted-foreground hover:text-foreground transition-colors text-sm flex items-center justify-center"
               >
-                {social}
+                <social.Icon className="w-5 h-5" />
               </a>
             ))}
           </div>
