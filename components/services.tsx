@@ -61,7 +61,7 @@ export default function Services() {
 
                 <div className="relative p-6 flex flex-col h-full">
                   {/* Icon */}
-                  <div className="mb-4 w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center group-hover:bg-primary/20 transition-colors">
+                  <div className="mb-4 w-12 h-12 badge-metallic flex items-center justify-center transition-colors">
                     <Icon className="w-6 h-6 text-primary" />
                   </div>
 
