@@ -93,7 +93,7 @@ export default function Services() {
             Contact us today for a free consultation and discover how our premium detailing services can restore your
             car's shine.
           </p>
-          <button className="inline-block px-8 py-3 bg-primary hover:bg-primary/90 text-primary-foreground font-semibold rounded-lg transition-colors">
+          <button className="inline-block px-8 py-3 btn-metallic metallic-glow text-black font-semibold rounded-lg transition-colors">
             Get Your Free Quote
           </button>
         </div>
