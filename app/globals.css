@@ -201,28 +201,59 @@
     padding: 0.5rem 1rem;
     overflow: hidden;
     transition: transform 0.15s ease, box-shadow 0.15s ease, background 0.15s ease;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08), 0 0 18px color-mix(in srgb, var(--metallic-silver-highlight) 65%, transparent);
   }
 
   .btn-metallic::after {
     content: "";
     position: absolute;
     inset: 0;
-    background: linear-gradient(180deg, rgba(255,255,255,0.65) 0%, rgba(255,255,255,0.25) 30%, rgba(255,255,255,0.06) 60%, rgba(0,0,0,0) 100%);
+    background: linear-gradient(180deg, rgba(255,255,255,0.9) 0%, rgba(255,255,255,0.45) 25%, rgba(255,255,255,0.08) 50%, rgba(0,0,0,0) 100%);
     mix-blend-mode: overlay;
     pointer-events: none;
     transform: translateY(-30%);
-    transition: transform 0.45s cubic-bezier(.2,.9,.2,1);
+    transition: transform 0.45s cubic-bezier(.2,.9,.2,1), opacity 0.25s ease;
+    opacity: 0.95;
   }
 
   .btn-metallic:hover {
     transform: translateY(-1px);
-    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.18);
-    background: linear-gradient(180deg, var(--metallic-silver-highlight), color-mix(in srgb, var(--metallic-silver-highlight) 60%, var(--metallic-silver) 40%));
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.18), 0 0 28px color-mix(in srgb, var(--metallic-silver-highlight) 75%, transparent);
+    background: linear-gradient(180deg, var(--metallic-silver-highlight), color-mix(in srgb, var(--metallic-silver-highlight) 70%, var(--metallic-silver) 30%));
   }
 
   .btn-metallic:active::after {
     transform: translateY(0);
+    opacity: 0.85;
+  }
+
+  /* Metallic glow utility for elements */
+  .metallic-glow {
+    box-shadow: 0 6px 26px color-mix(in srgb, var(--metallic-silver-highlight) 70%, transparent), 0 2px 8px color-mix(in srgb, var(--metallic-silver) 40%, transparent);
+    transition: box-shadow 0.2s ease, transform 0.15s ease;
+  }
+
+  .metallic-glow:hover {
+    box-shadow: 0 10px 40px color-mix(in srgb, var(--metallic-silver-highlight) 80%, transparent), 0 4px 12px color-mix(in srgb, var(--metallic-silver) 50%, transparent);
+    transform: translateY(-1px);
+  }
+
+  /* Logo-specific metallic glow */
+  .logo-metallic-glow {
+    position: relative;
+    border-radius: 0.5rem;
+    box-shadow: 0 6px 20px color-mix(in srgb, var(--metallic-silver-highlight) 70%, transparent), 0 2px 6px color-mix(in srgb, var(--metallic-silver) 40%, transparent);
+  }
+
+  .logo-metallic-glow::after {
+    content: "";
+    position: absolute;
+    inset: -6px;
+    border-radius: inherit;
+    background: radial-gradient(closest-side, color-mix(in srgb, var(--metallic-silver-highlight) 40%, transparent), transparent 60%);
+    filter: blur(8px);
+    opacity: 0.9;
+    pointer-events: none;
   }
 
   .badge-metallic {
