@@ -53,28 +53,34 @@ export default function Gallery() {
   }
 
   const imagePairs: Record<number, { before: string; after: string }> = {
+    // 1: Jeep Wrangler (muddy -> cleaned)
     1: {
-      before: "https://images.pexels.com/photos/10900760/pexels-photo-10900760.jpeg",
-      after: "https://images.pexels.com/photos/17252045/pexels-photo-17252045.jpeg",
+      before: "https://images.pexels.com/photos/11207122/pexels-photo-11207122.jpeg",
+      after: "https://images.pexels.com/photos/11209086/pexels-photo-11209086.jpeg",
     },
+    // 2: Ford Mustang (wet/dirty -> polished)
     2: {
-      before: "https://images.pexels.com/photos/11499783/pexels-photo-11499783.jpeg",
-      after: "https://images.pexels.com/photos/5616300/pexels-photo-5616300.jpeg",
+      before: "https://images.pexels.com/photos/3354648/pexels-photo-3354648.jpeg",
+      after: "https://images.pexels.com/photos/3065602/pexels-photo-3065602.jpeg",
     },
+    // 3: Toyota/Tacoma style truck (muddy -> cleaned)
     3: {
-      before: "https://images.pexels.com/photos/5233264/pexels-photo-5233264.jpeg",
-      after: "https://images.pexels.com/photos/244818/pexels-photo-244818.jpeg",
-    },
-    4: {
-      before: "https://images.pexels.com/photos/9381641/pexels-photo-9381641.jpeg",
-      after: "https://images.pexels.com/photos/11139393/pexels-photo-11139393.jpeg",
-    },
-    5: {
-      before: "https://images.pexels.com/photos/18038882/pexels-photo-18038882.jpeg",
-      after: "https://images.pexels.com/photos/18688742/pexels-photo-18688742.jpeg",
-    },
-    6: {
       before: "https://images.pexels.com/photos/18078013/pexels-photo-18078013.jpeg",
+      after: "https://images.pexels.com/photos/19667151/pexels-photo-19667151.jpeg",
+    },
+    // 4: Subaru/outdoor SUV (muddy -> cleaned)
+    4: {
+      before: "https://images.pexels.com/photos/15928393/pexels-photo-15928393.jpeg",
+      after: "https://images.pexels.com/photos/34295404/pexels-photo-34295404.jpeg",
+    },
+    // 5: BMW (aged/dirty -> showroom clean)
+    5: {
+      before: "https://images.pexels.com/photos/13938281/pexels-photo-13938281.jpeg",
+      after: "https://images.pexels.com/photos/11139416/pexels-photo-11139416.jpeg",
+    },
+    // 6: Generic off-road SUV (muddy -> after detail)
+    6: {
+      before: "https://images.pexels.com/photos/28767876/pexels-photo-28767876.jpeg",
       after: "https://images.pexels.com/photos/6536963/pexels-photo-6536963.jpeg",
     },
   }
