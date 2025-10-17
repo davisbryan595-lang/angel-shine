@@ -169,15 +169,15 @@ export default function Gallery() {
             <p className="text-sm text-muted-foreground">Vehicles Detailed</p>
           </div>
           <div className="text-center">
-            <div className="text-3xl font-bold text-primary mb-2">98%</div>
+            <div className="text-3xl font-bold text-primary mb-2 metallic-text">98%</div>
             <p className="text-sm text-muted-foreground">Customer Satisfaction</p>
           </div>
           <div className="text-center">
-            <div className="text-3xl font-bold text-primary mb-2">15+</div>
+            <div className="text-3xl font-bold text-primary mb-2 metallic-text">15+</div>
             <p className="text-sm text-muted-foreground">Awards Won</p>
           </div>
           <div className="text-center">
-            <div className="text-3xl font-bold text-primary mb-2">24/7</div>
+            <div className="text-3xl font-bold text-primary mb-2 metallic-text">24/7</div>
             <p className="text-sm text-muted-foreground">Customer Support</p>
           </div>
         </div>
