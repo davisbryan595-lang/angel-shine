@@ -54,7 +54,7 @@ export default function Services() {
             return (
               <Card
                 key={index}
-                className="group relative bg-card border-border hover:border-primary/50 transition-all duration-300 overflow-hidden"
+                className="group relative bg-card border-border hover:border-primary/50 transition-all duration-300 overflow-hidden metallic-glow"
               >
                 {/* Hover background effect */}
                 <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
