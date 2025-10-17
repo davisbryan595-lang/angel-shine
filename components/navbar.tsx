@@ -25,8 +25,8 @@ export default function Navbar() {
               <Image
                 src="https://cdn.builder.io/api/v1/image/assets%2F5c758e804cba4fa3a488e9088887877b%2F3112de0cfabb4364b4df0113ae51281e?format=webp&width=800"
                 alt="Angel's Shine Detailing logo"
-                width={40}
-                height={40}
+                width={80}
+                height={80}
                 className="object-cover w-full h-full"
                 priority
               />
