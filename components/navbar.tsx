@@ -18,10 +18,10 @@ export default function Navbar() {
   return (
     <nav className="sticky top-0 z-50 bg-secondary/95 backdrop-blur-sm border-b border-border">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center h-16">
+        <div className="flex justify-between items-center h-24">
           {/* Logo */}
           <Link href="/" className="flex items-center gap-2" aria-label="Angel's Shine Detailing">
-            <div className="w-10 h-10 bg-primary rounded-lg overflow-hidden">
+            <div className="w-20 h-20 bg-primary rounded-lg overflow-hidden ring-2 ring-[var(--metallic-silver)] ring-offset-2 ring-offset-background">
               <Image
                 src="https://cdn.builder.io/api/v1/image/assets%2F5c758e804cba4fa3a488e9088887877b%2F3112de0cfabb4364b4df0113ae51281e?format=webp&width=800"
                 alt="Angel's Shine Detailing logo"
