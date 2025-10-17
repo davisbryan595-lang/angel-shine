@@ -55,27 +55,27 @@ export default function Gallery() {
   const imagePairs: Record<number, { before: string; after: string }> = {
     1: {
       before: "https://images.pexels.com/photos/10900760/pexels-photo-10900760.jpeg",
-      after: "https://images.pexels.com/photos/20296993/pexels-photo-20296993.jpeg",
+      after: "https://images.pexels.com/photos/17252045/pexels-photo-17252045.jpeg",
     },
     2: {
-      before: "https://images.pexels.com/photos/6873123/pexels-photo-6873123.jpeg",
-      after: "https://images.pexels.com/photos/12764927/pexels-photo-12764927.jpeg",
+      before: "https://images.pexels.com/photos/11499783/pexels-photo-11499783.jpeg",
+      after: "https://images.pexels.com/photos/5616300/pexels-photo-5616300.jpeg",
     },
     3: {
-      before: "https://images.pexels.com/photos/9381641/pexels-photo-9381641.jpeg",
-      after: "https://images.pexels.com/photos/11139393/pexels-photo-11139393.jpeg",
+      before: "https://images.pexels.com/photos/5233264/pexels-photo-5233264.jpeg",
+      after: "https://images.pexels.com/photos/244818/pexels-photo-244818.jpeg",
     },
     4: {
       before: "https://images.pexels.com/photos/9381641/pexels-photo-9381641.jpeg",
       after: "https://images.pexels.com/photos/11139393/pexels-photo-11139393.jpeg",
     },
     5: {
-      before: "https://images.pexels.com/photos/7019607/pexels-photo-7019607.jpeg",
-      after: "https://images.pexels.com/photos/13805638/pexels-photo-13805638.jpeg",
+      before: "https://images.pexels.com/photos/18038882/pexels-photo-18038882.jpeg",
+      after: "https://images.pexels.com/photos/18688742/pexels-photo-18688742.jpeg",
     },
     6: {
-      before: "https://images.pexels.com/photos/10900760/pexels-photo-10900760.jpeg",
-      after: "https://images.pexels.com/photos/20296993/pexels-photo-20296993.jpeg",
+      before: "https://images.pexels.com/photos/18078013/pexels-photo-18078013.jpeg",
+      after: "https://images.pexels.com/photos/6536963/pexels-photo-6536963.jpeg",
     },
   }
 
