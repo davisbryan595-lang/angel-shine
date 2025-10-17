@@ -146,10 +146,10 @@ export default function Gallery() {
 
                 {/* Labels */}
                 <div className="absolute top-4 left-4 px-3 py-1 bg-black/50 backdrop-blur-sm rounded text-white text-xs font-semibold">
-                  Before
+                  After
                 </div>
                 <div className="absolute top-4 right-4 px-3 py-1 bg-black/50 backdrop-blur-sm rounded text-white text-xs font-semibold">
-                  After
+                  Before
                 </div>
               </div>
 
