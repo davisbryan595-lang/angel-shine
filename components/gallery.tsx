@@ -84,7 +84,7 @@ export default function Gallery() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
         <div className="text-center mb-16">
-          <div className="inline-block mb-4 px-4 py-2 bg-primary/10 border border-primary/30 rounded-full">
+          <div className="inline-block mb-4 px-4 py-2 badge-metallic">
             <span className="text-primary font-semibold text-sm">Our Work</span>
           </div>
           <h2 className="text-4xl sm:text-5xl font-bold text-foreground mb-4">Before & After Gallery</h2>
