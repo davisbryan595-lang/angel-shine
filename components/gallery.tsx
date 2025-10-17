@@ -165,7 +165,7 @@ export default function Gallery() {
         {/* Gallery Stats */}
         <div className="mt-16 grid grid-cols-2 md:grid-cols-4 gap-6 bg-card border border-border rounded-xl p-8">
           <div className="text-center">
-            <div className="text-3xl font-bold text-primary mb-2">1000+</div>
+            <div className="text-3xl font-bold text-primary mb-2 metallic-text">1000+</div>
             <p className="text-sm text-muted-foreground">Vehicles Detailed</p>
           </div>
           <div className="text-center">
